@@ -1,0 +1,46 @@
+<!--8. Async Array Mapping: Write an asynchronous function that takes an array of numbers and returns a new array of Promises where each number is multiplied by 2 after a delay of 500 milliseconds. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            color: rgb(0, 255, 42);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+    
+     // Function to simulate delay and multiply *2
+     function multiplyAfterDelay(arr) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    let multiplied = arr.map(num => num *2); // Multiply all after delay
+                    resolve(multiplied);
+                }, 500); 
+            });
+      }
+
+      // Main function
+      async function setDelay(arr) {
+            console.log(arr); // 👉 Print immediately
+
+            let result = await multiplyAfterDelay(arr); // 👉 Wait 500ms and multiply
+
+            console.log(result); // 👉 Then print multiplied
+      }
+
+      
+      setDelay([7, 1, 9, 7, 2]);
+
+        
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        div{
+            background-color: rgb(173, 248, 158);
+        }
+        .red{
+            color:rgb(4, 0, 255);
+         /*background-color: azure;*/
+        }
+        #green{
+            color: rgb(255, 0, 0);
+        }
+
+        /*child selector (has to be direct selector - direct after div)*/
+        div>p{
+            background-color: rgb(255, 119, 0);
+        }
+
+        /*decendent selector (to be in div) */
+        div p{
+             color: blueviolet;
+
+        }
+        /*universal selactor*/
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /*psuedo selactor*/
+        
+        a:link{
+            color: rgb(255, 0, 0);
+        }
+
+        a:visited{
+           color: rgb(243, 251, 0);
+        }
+
+        a:active{
+            background-color:red ;
+        }
+
+        a:hover{
+            background-color: black;
+        }
+
+        p:first-child{
+                background-color: rgb(0, 238, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>first child</p>
+        <p>second child</p>
+    </main>
+    <div class="red">i am a div</div>
+    <div id="green">i am a div
+        <article>
+            <p>hi hello i am good</p>
+        </article>
+    </div>
+    <a href="https://pinterest.com">Go to pin</a><br>
+    <a href="https://instagram.com">Go to insta</a>
+</body>
+</html> 

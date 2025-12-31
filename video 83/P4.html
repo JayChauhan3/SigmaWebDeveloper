@@ -1,0 +1,51 @@
+<!--4. The Password Validator: You are building a password validation feature. Create a function that checks if a given password meets the following criteria: at least 8 characters long, contains both uppercase and lowercase letters, and includes at least one digit. -->
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+   
+//     function isValidPassword(password) {
+//   const minLength = password.length >= 8;
+//   const hasUppercase = /[A-Z]/.test(password);
+//   const hasLowercase = /[a-z]/.test(password);
+//   const hasDigit = /\d/.test(password);
+
+//   return minLength && hasUppercase && hasLowercase && hasDigit;
+// }
+
+//   console.log(isValidPassword("Passnrd1"));  
+  
+  
+/////////////////////////////////////////////////////     More Better 
+
+function validatePassword(password) {
+  let messages = [];
+
+  if (password.length < 8) {
+    messages.push("Password must be at least 8 characters long");
+  }
+
+  if (!/[A-Z]/.test(password)) {
+    messages.push("Password must include at least one Uppercase letter");
+  }
+
+  if (!/[a-z]/.test(password)) {
+    messages.push("Password must include at least one Lowercase letter");
+  }
+
+  if (!/\d/.test(password)) {
+    messages.push("Password must include at least One Digit");
+  }
+
+  if (messages.length === 0) {
+    return ("Password is valid ✅" );
+  } else {
+    return ( messages.join());
+  }
+
+}
+
+console.log(validatePassword("Jay9"));
+    </script>
+</body>
+</html>

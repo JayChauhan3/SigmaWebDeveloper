@@ -1,0 +1,79 @@
+<!--10. The Coffee Machine: In your coffee shop application, you need to simulate the process of brewing coffee asynchronously. Write an async function named brewCoffee that takes the type of coffee and returns a promise. The promise should resolve with a message indicating that the coffee is ready after a random delay. -->
+
+
+
+
+<!-- SEE P10 Extra   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            color: rgb(255, 217, 0);
+            background-color: rgb(49, 28, 2);
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: brown;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>☕ Coffee Machine</h1>
+    <button>Brew Coffee</button>
+    <div class="message"></div>
+
+    <script>
+
+        // Function to simulate brewing coffee
+        function brewCoffee(coffeeType) {
+            return new Promise((resolve) => {
+                const randomDelay = Math.floor(Math.random() * 3000) + 1000; // Random delay between 1s and 4s
+                setTimeout(() => {
+                    resolve(`✅ Your ${coffeeType} is ready!`);
+                }, randomDelay);
+            });
+        }
+
+        // Async function to handle the coffee brewing
+        async function makeCoffee() {
+            const coffeeType = prompt("Which coffee would you like? (e.g., Espresso, Latte, Cappuccino)");
+
+            if (coffeeType) {
+                document.querySelector(".message").innerHTML = `⏳ Brewing your ${coffeeType}... Please wait!`;
+
+                const readyMessage = await brewCoffee(coffeeType);
+
+                document.querySelector(".message").innerHTML = readyMessage;
+            } else {
+                document.querySelector(".message").innerHTML = "❗ No coffee selected.";
+            }
+        }
+
+        // Button click event
+        document.querySelector("button").addEventListener("click", () => {
+            makeCoffee();
+        });
+
+    </script>
+
+</body>
+
+</html>

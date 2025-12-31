@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home / X</title>
+  <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-black text-white m-0 p-0">
+  <div class=" flex w-full h-full bg-black flex-row justify-center fixed">
+   
+
+
+    <nav
+      class="left flex-shrink-0 bg-black w-[275px] h-screen flex flex-col gap-5 items-end  box-border top-0 left-0 pl-24 z-20 sticky">
+
+      <!-- <div class="logo w-8 h-8 pt-3">
+        <img src="images/logo.svg" alt="">
+      </div> -->
+      <div class="lcontent flex flex-col pl-o justify-start">
+        <ul class="flex flex-col gap-2">
+
+          <li class="flex gap-5 px-3 py-2">
+            <img class="w-7 h-7" src="images/logo.svg" alt=""><span class="text-xl"></span>
+          </li>
+
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/home.svg" alt=""><span class="text-xl">Home</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/explore.svg" alt=""><span class="text-xl">Explore</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/notifications.svg" alt=""><span class="text-xl">Notifications</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/messages.svg" alt=""><span class="text-xl">Messages</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/grok.svg" alt=""><span class="text-xl">Grok</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/bookmarks.svg" alt=""><span class="text-xl">Bookmarks</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/communities.svg" alt=""><span class="text-xl">Communities</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/logo.svg" alt=""><span class="text-xl">Premium</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/verifiedorgs.svg" alt=""><span class="text-xl">Verified Orgs</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/profile.svg" alt=""><span class="text-xl">Profile</span></li>
+          <li class="flex gap-5  text-white hover:bg-[#16181C] px-3 py-2 rounded-full cursor-pointer"><img
+              class="w-7 h-7" src="images/more.svg" alt=""><span class="text-xl">More</span></li>
+        </ul>
+        <div class="button pt-5 text-black pr-9"><button
+            class="bg-[#EFF3F4] w-[235px] rounded-full px-1 py-1 pt-3 pb-3 text-lg font-bold ml-[8px]">Post</button>
+        </div>
+        <div class="bg-black text-white px-5 pt-12 flex items-center justify-between max-w-sm">
+  <!-- Profile info -->
+  <div class="flex items-center space-x-3">
+    <img src="images/p4.jpeg" alt="Profile" class="w-10 h-10 rounded-full" />
+    <div>
+      <div class="flex items-center space-x-1">
+        <span class="font-bold">JC</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm6-7h-1V7a5 5 0 0 0-10 0v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Zm-8-3a2 2 0 1 1 4 0v3h-4V7Zm8 14H6v-9h12v9Z"/>
+        </svg>
+      </div>
+      <div class="text-gray-400 text-sm">@JAY9</div>
+    </div>
+  </div>
+
+  <!-- Ellipsis -->
+  <div class="text-white text-xs">•••</div>
+</div>
+      </div>
+    </nav>
+
+
+   
+    
+    <main  id="main" class="2part top-0 pt-0 flex flex-row h-screen gap-8 overflow-y-auto">
+
+      <!-- CENTER Page Wrapper-->
+      <div id="center" class="center max-w-[600px] border-x border-[#2F3336] flex flex-col flex-1 h-max">
+      
+    
+
+        <!-- Main Centered Column -->
+        <div class="flex flex-col w-full ">
+
+          <!-- Sticky Tab Bar -->
+          <div class="sticky top-0 z-10 backdrop-blur-md bg-black/40 border-b border-[#2F3336] flex w-full">
+            <a id="tab-for-you"
+              class="tab flex-1 hover:bg-white/10 flex items-center justify-center relative cursor-pointer text-white font-semibold py-4">
+              <div class="flex flex-col items-center ">
+                <span class="tab-label">For you</span>
+                <div class="underline absolute bottom-0 h-1 bg-blue-500 rounded-full w-full max-w-[19%] hidden"></div>
+              </div>
+            </a>
+            <a id="tab-following"
+              class="tab flex-1 hover:bg-white/10 flex items-center justify-center relative cursor-pointer text-gray-400 font-semibold py-4">
+              <div class="flex flex-col items-center">
+                <span class="tab-label">Following</span>
+                <div class="underline absolute bottom-0 h-1 bg-blue-500 rounded-full w-full max-w-[24%] hidden"></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Scrollable Content -->
+          <div id="leftContent" class="content py-6 space-y-4 overflow-y-auto">
+
+
+            <!-- Main Feed Wrapper -->
+            <!-- Centered Feed Container Like X -->
+            <div class="w-full flex justify-center bg-black text-white">
+              <div class="w-full max-w-[600px]">
+
+
+
+
+                <!-- Post with Video -->
+                <div class="p-4 transition duration-200 cursor-pointer border-b border-[#2F3336]">
+                  <!-- Header -->
+                  <div class="flex items-start space-x-3">
+                    <img src="images/MIlogo.jpg" class="w-10 h-10 rounded-full" alt="Profile" />
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between">
+                        <div class="text-white font-semibold">Mumbai Indians <span
+                            class="text-gray-400 font-normal">@mipaltan · 3h</span></div>
+                        <div class="text-gray-400 hover:text-blue-500"><i class="ri-more-fill"></i></div>
+                      </div>
+                      <!-- Content -->
+                      <div class="text-white mt-1">
+                        Wake up, bowl yorkers, dislodge stumps, repeat! 🔥👊<br />
+                        <span class="text-blue-400">#MumbaiIndians #PlayLikeMumbai #TATAIPL #MIvDC</span>
+                      </div>
+
+                      <!-- Video -->
+                      <div class="mt-3 rounded-xl overflow-hidden border border-[#2F3336]">
+                        <video controls class="w-full h-auto max-h-[500px]">
+                          <source src="mi.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+
+                      <!-- Actions -->
+                      <div class="flex justify-between text-gray-400 mt-3 text-sm">
+
+
+                        <!-- Comment -->
+                        <div class="flex items-center cursor-pointer group">
+                          <!-- SVG with circle background that lights up with text on hover -->
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-[#1D9BF0]">
+                              <path
+                                d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" />
+                            </svg>
+                          </div>
+
+                          <!-- Text that lights up together with icon -->
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-[#1D9BF0]">62</span>
+                        </div>
+
+                        <!-- Repost -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-green-400">
+                              <path
+                                d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-green-400">90</span>
+                        </div>
+
+                        <!-- Likes -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-pink-500">
+                              <path
+                                d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-pink-500">200</span>
+                        </div>
+
+                        <!-- Views -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-blue-400">
+                              <path
+                                d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-blue-400">16k</span>
+                        </div>
+
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-blue-400">
+                              <path
+                                d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                              </path>
+                            </svg>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Post with Image -->
+                <div class="p-4 transition duration-200 cursor-pointer">
+                  <!-- Header -->
+                  <div class="flex items-start space-x-3">
+                    <img src="images/cc.jpg" class="w-10 h-10 rounded-full" alt="Profile" />
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between">
+                        <div class="text-white font-semibold">Cricket Central <span
+                            class="text-gray-400 font-normal">@cric_central · 2h</span></div>
+                        <div class="text-gray-400 hover:text-blue-500"><i class="ri-more-fill"></i></div>
+                      </div>
+                      <!-- Content -->
+                      <div class="text-white mt-1">
+                        Jonny Bairstow is thrilled to join Mumbai Indians 🔵🏏 <br />
+                        <span class="text-blue-400"> #JonnyBairstow #IPL #IPL2025 #MumbaiIndians #CricketTwitter</span>
+                      </div>
+
+                      <!-- Image -->
+                      <div class="mt-3 rounded-xl overflow-hidden border border-[#2F3336]">
+                        <img src="images/m1.jpeg" alt="Post image" class="w-full object-cover" />
+                      </div>
+
+                      <!-- Actions -->
+                      <div class="flex justify-between text-gray-400 mt-3 text-sm">
+
+
+                        <!-- Comment -->
+                        <div class="flex items-center cursor-pointer group">
+                          <!-- SVG with circle background that lights up with text on hover -->
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-[#1D9BF0]">
+                              <path
+                                d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" />
+                            </svg>
+                          </div>
+
+                          <!-- Text that lights up together with icon -->
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-[#1D9BF0]">622</span>
+                        </div>
+
+                        <!-- Repost -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-green-400">
+                              <path
+                                d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-green-400">300</span>
+                        </div>
+
+                        <!-- Likes -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-pink-500">
+                              <path
+                                d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-pink-500">600</span>
+                        </div>
+
+                        <!-- Views -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-blue-400">
+                              <path
+                                d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-blue-400">12k</span>
+                        </div>
+
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-blue-400">
+                              <path
+                                d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                              </path>
+                            </svg>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                
+
+
+                <div class="p-4 transition duration-200 cursor-pointer">
+                  <!-- Header -->
+                  <div class="flex items-start space-x-3">
+                    <img src="images/cc.jpg" class="w-10 h-10 rounded-full" alt="Profile" />
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between">
+                        <div class="text-white font-semibold">Cricket Central <span
+                            class="text-gray-400 font-normal">@cric_central · 2h</span></div>
+                        <div class="text-gray-400 hover:text-blue-500"><i class="ri-more-fill"></i></div>
+                      </div>
+                      <!-- Content -->
+                      <div class="text-white mt-1">
+                        Jonny Bairstow is thrilled to join Mumbai Indians 🔵🏏 <br />
+                        <span class="text-blue-400"> #JonnyBairstow #IPL #IPL2025 #MumbaiIndians #CricketTwitter</span>
+                      </div>
+
+                      <!-- Image -->
+                      <div class="mt-3 rounded-xl overflow-hidden border border-[#2F3336]">
+                        <img src="images/m1.jpeg" alt="Post image" class="w-full object-cover" />
+                      </div>
+
+                      <!-- Actions -->
+                      <div class="flex justify-between text-gray-400 mt-3 text-sm">
+
+
+                        <!-- Comment -->
+                        <div class="flex items-center cursor-pointer group">
+                          <!-- SVG with circle background that lights up with text on hover -->
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-[#1D9BF0]">
+                              <path
+                                d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" />
+                            </svg>
+                          </div>
+
+                          <!-- Text that lights up together with icon -->
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-[#1D9BF0]">622</span>
+                        </div>
+
+                        <!-- Repost -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-green-400">
+                              <path
+                                d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-green-400">300</span>
+                        </div>
+
+                        <!-- Likes -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-pink-500">
+                              <path
+                                d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-pink-500">600</span>
+                        </div>
+
+                        <!-- Views -->
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-blue-400">
+                              <path
+                                d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                              </path>
+                            </svg>
+
+                          </div>
+                          <span
+                            class="text-sm text-gray-400 -ml-1 transition duration-200 group-hover:text-blue-400">12k</span>
+                        </div>
+
+                        <div class="flex items-center cursor-pointer group">
+                          <div class="p-2 rounded-full transition duration-200 group-hover:bg-[#15202B]">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                              class="w-5 h-5 text-gray-400 transition duration-200 group-hover:text-blue-400">
+                              <path
+                                d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                              </path>
+                            </svg>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      
+        
+    
+  <aside id="right" class="w-full max-w-[350px] px-1 top-0 sticky self-start bg-black flex flex-col h-max">
+  
+        <div class="searchbox pb-2 w-full flex bg-black top-0 z-10 sticky">
+          <div class="relative w-[350px] max-w-md mx-auto pt-1">
+            <!-- Input -->
+            <input type="text" id="searchInput" placeholder="Search"
+              class="w-full pl-11 pr-10 py-[10px] rounded-full bg-black text-white text-base border border-[#2F3336] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-white"
+              oninput="toggleClearButton()" />
+
+            <!-- Search Icon -->
+            <div class="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+              </svg>
+            </div>
+
+            <!-- Clear Button -->
+            <button id="clearButton" onclick="clearSearch()"
+              class="absolute right-3 top-1/2 -translate-y-1/2 bg-white text-black w-4 h-4 rounded-full flex items-center justify-center text-sm font-bold hover:bg-gray-200 hidden">
+              ×
+            </button>
+          </div>
+        </div>
+         <div id="rightContent" class="scrollable pt-2 space-y-4 overflow-y-auto">
+        
+          <div
+            class=" text-white border border-[#2F3336] rounded-3xl pl-5 pt-3 pb-4 pr-[22px] w-full h-max flex flex-col gap-5">
+            <h1 class="text-xl font-extrabold">What’s happening</h1>
+            <div class="b flex flex-row w-full justify-between">
+              <div class=" flex flex-col">
+                <span class=" text-xs text-[#71767A] font-normal">Sports · Trending</span>
+                <span class="text-sm font-bold">#RRvsPBKS</span>
+                <span class=" text-xs text-[#71767A] font-normal">14.2K posts</span>
+              </div>
+              <div class="3dots"><img class="w-5 h-5" src="images/3dots.svg" alt=""></div>
+            </div>
+            <div class="b flex flex-row w-full justify-between">
+              <div class=" flex flex-col">
+                <span class=" text-xs text-[#71767A] font-normal">Business & finance · Trending</span>
+                <span class="text-sm font-bold">#Nifty</span>
+                <span class=" text-xs text-[#71767A] font-normal">1,343 posts</span>
+              </div>
+              <div class="3dots"><img class="w-5 h-5" src="images/3dots.svg" alt=""></div>
+            </div>
+            <div class="b flex flex-row w-full justify-between">
+              <div class=" flex flex-col">
+                <span class=" text-xs text-[#71767A] font-normal">Trending in India</span>
+                <span class="text-sm font-bold">हनुमान बेनीवाल</span>
+                <span class=" text-xs text-[#71767A] font-normal">8,643 posts</span>
+              </div>
+              <div class="3dots"><img class="w-5 h-5" src="images/3dots.svg" alt=""></div>
+            </div>
+            <div class="b flex flex-row w-full justify-between">
+              <div class=" flex flex-col">
+                <span class=" text-xs text-[#71767A] font-normal">Trending in India</span>
+                <span class="text-sm font-bold">WARRA FAREWELL FOR CHOKLI</span>
+                <span class=" text-xs text-[#71767A] font-normal">4,887 posts</span>
+              </div>
+              <div class="3dots"><img class="w-5 h-5" src="images/3dots.svg" alt=""></div>
+            </div>
+            <div class="blue text-base pt-2 font-normal text-[#1C9BEF] ">Show more</div>
+          </div>
+
+
+
+
+
+
+
+
+          <!-- Who to follow -->
+          <div class=" text-white rounded-3xl pl-2 pt-3 pb-5 pr-[22px] w-full h-max flex flex-col gap-3 border border-[#2F3336]">
+            <div class="flex justify-between items-center">
+              <h1 class="text-xl font-extrabold pl-3">Who to follow</h1>
+            </div>
+            <div class="flex flex-col gap-0">
+              <div
+                class="flex items-center justify-between hover:bg-[#181818] p-3 rounded-xl transition-colors cursor-pointer">
+                <div class="flex items-center gap-3">
+                  <img src="images/p1.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                  <div class="flex flex-col">
+                    <span class="font-bold">Narendra Modi</span>
+                    <span class="text-[#71767B]">@narendramodi</span>
+                  </div>
+                </div>
+                <button
+                  class="bg-white text-black font-bold px-4 py-1.5 rounded-full hover:bg-gray-200 transition-colors">Follow</button>
+              </div>
+              <div
+                class="flex items-center justify-between hover:bg-[#181818] p-3 rounded-xl transition-colors cursor-pointer ">
+                <div class="flex items-center gap-3">
+                  <img src="images/p2.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                  <div class="flex flex-col">
+                    <span class="font-bold">Rohit Sharma</span>
+                    <span class="text-[#71767B]">@ImRo45</span>
+                  </div>
+                </div>
+                <button
+                  class="bg-white text-black font-bold px-4 py-1.5 rounded-full hover:bg-gray-200 transition-colors">Follow</button>
+              </div>
+              <div
+                class="flex items-center justify-between hover:bg-[#181818] p-3 rounded-xl transition-colors cursor-pointer ">
+                <div class="flex items-center gap-3">
+                  <img src="images/p3.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                  <div class="flex flex-col">
+                    <span class="font-bold">John Abraham</span>
+                    <span class="text-[#71767B]">@TheJohnAbraham</span>
+                  </div>
+                </div>
+                <button
+                  class="bg-white text-black font-bold px-4 py-1.5 rounded-full hover:bg-gray-200 transition-colors">Follow</button>
+              </div>
+            </div>
+            <button class="text-[#1D9BF0]  transition-colors text-left pl-4 pt-1 text-base">Show
+              more</button>
+          </div>
+
+          <!-- Footer -->
+          <div class="text-[#71767B] text-xs px-4 pb-24 ">
+            <div class="flex flex-wrap gap-2">
+              <a href="#" class="hover:underline">Terms of Service</a>
+              <a href="#" class="hover:underline">Privacy Policy</a>
+              <a href="#" class="hover:underline">Cookie Policy</a>
+              <a href="#" class="hover:underline">Accessibility</a>
+              <a href="#" class="hover:underline">Ads info</a>
+              <a href="#" class="hover:underline">More</a>
+              <span>© 2024 X Corp.</span>
+            </div>
+          </div>
+
+
+        </div>
+      </aside>
+
+    </main> <!--Main -->
+  </div>
+  <script src="script.js"></script>
+</body>
+
+
+</html>

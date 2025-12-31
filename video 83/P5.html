@@ -1,0 +1,47 @@
+<!--5. The Sum Selector: You are working on a function that should sum all numbers in an array until it encounters a negative number. Write a function that performs this summation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <script>
+
+function sumArray(arr) {
+  let sum = 0;
+
+  for (let num of arr) {
+    if (num < 0) break;  // Stop if a negative number is found
+    sum += num;
+  }
+
+  return sum;
+}
+
+
+console.log(sumArray([3, 5, 7, -1, 4, 6]));
+
+
+
+
+
+////////////////////////////////////////////Other Way
+// let arr = [ '3','4','-4','7' ]
+
+// function arrsum(arr) {
+//    let sum=0;
+   
+//    for (const num of arr) {
+//     const value = Number(num);
+//     if(num<0) break;
+//     sum += value;
+//    }
+//    return  sum;
+    
+// }
+// console.log(arrsum(arr));
+
+
+    </script>
+
+</body>
+</html>

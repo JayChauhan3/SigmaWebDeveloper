@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Name Validation</title>
+</head>
+<body>
+  <h2>Enter your name:</h2>
+  <input type="text" id="nameInput" placeholder="Enter name">
+  <p id="message"></p>
+
+  <script>
+    class User {
+      constructor() {
+        this._name = "";
+      }
+
+      get name() {
+        return this._name;
+      }
+
+      set name(value) {
+        this._name = value;
+        const message = document.getElementById('message');
+        if (value.length < 4) {
+          message.textContent = 'Name is too short';
+        } else {
+          message.textContent = `Welcome, ${value}!`;
+        }
+      }
+    }
+
+    const user = new User();
+
+    document.getElementById('nameInput').addEventListener('input', function () {
+      user.name = this.value;
+    });
+  </script>
+</body>
+</html>

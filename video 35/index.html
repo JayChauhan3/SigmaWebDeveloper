@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOre on css selectors</title>
+    <style>
+        /* .box:first-child{
+     background-color: red;
+        } */
+        /* .box::first-line{
+     color: red;
+        } */
+        /* .boxes *{
+            color: rgb(0, 55, 255);
+            border: 2px solid rgb(0, 0, 0);
+        }
+    p, a, .box,    [data-color="primary"]{
+            padding-top: 45px;
+
+        } */
+         .box:nth-child(even){
+            background-color: aquamarine;
+         }
+         .box:nth-last-child(1){
+            background-color: rgb(246, 255, 0);
+         }
+         .boxes::before{
+            content: "I am before";
+            color: rgb(255, 80, 80);
+         }
+         .boxes::after{
+            content: "I am after";
+            color: rgb(0, 140, 255)
+         }
+         ::selection{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 0, 0);
+         }
+         .box::first-letter{
+            color: rgb(255, 0, 0);
+            font-size: 30PX;
+         }
+         input::placeholder{
+            color: rgb(206, 206, 206);
+            font-size: 13px;
+         }
+         input{
+            display: block;
+         }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div  data-color="primary"  class="box">Lorem, ipsum dolor sit  repellat, eligendi distinctio.</div>
+        <div class="box">second box </div>
+        <div class="box">third box</div>
+       <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>

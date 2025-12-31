@@ -1,0 +1,31 @@
+<!--6. The Vowel Counter: You need to create a function that counts the number of vowels in a given string. Consider both uppercase and lowercase vowels. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+    
+   
+
+    function  countVowels (str) {
+        const vowels = 'aeiouAEIOU'
+        let count=0;
+        for (const char of str) {
+            if(vowels.includes(char)){
+                count++;
+            }
+        }
+        return count;
+    }
+     
+     
+    //Advance------------------------------------------------\
+    // const countVowels = str => (str.match(/[aeiou]/gi) || []).length;
+
+    console.log(countVowels("jay"));  
+
+    </script>
+</body>
+</html>

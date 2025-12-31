@@ -1,0 +1,8 @@
+.red        /*class*/
+{color: rgb(246, 0, 0);}
+.bg-yellow
+{ background-color: blue;}
+#seconddiv  /*id*/
+{
+    background-color: rgb(47, 255, 0);
+}

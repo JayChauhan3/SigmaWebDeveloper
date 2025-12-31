@@ -1,0 +1,44 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Data</title>
+</head>
+<body>
+    <button id="gen" style="color: black;background-color: rgb(0, 255, 26);border-radius: 10px;padding: 10px;">
+      <span>Generate</span>
+    </button>
+    <script>
+  document.getElementById('gen').addEventListener('click', async () => {
+    const response = await fetch('/generate');
+    const message = await response.text();
+    alert(message);
+  });
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generate Employees</title>
+</head>
+<body>
+  <h1>Employee Generator</h1>
+
+  <% if (typeof message !== 'undefined') { %>
+    <p style="color: green;"><%= message %></p>
+  <% } %>
+
+  <form action="/generate" method="POST">
+    <button type="submit" style="color: black; background-color: rgb(0, 255, 26); border-radius: 10px; padding: 10px;">
+      Generate Employees
+    </button>
+  </form>
+</body>
+</html>

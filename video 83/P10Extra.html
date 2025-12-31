@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            color: rgb(255, 217, 0);
+            background-color: rgb(49, 28, 2);
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        select, button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        select {
+            background-color: #fff;
+            color: #333;
+        }
+
+        button {
+            background-color: brown;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .message {
+            margin-top: 30px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>☕ Welcome to Coffee Shop</h1>
+
+    <!-- Dropdown menu -->
+    <select id="coffeeSelect">
+        <option value="">-- Select your Coffee --</option>
+        <option value="Espresso">Espresso</option>
+        <option value="Latte">Latte</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Americano">Americano</option>
+        <option value="Mocha">Mocha</option>
+    </select>
+
+    <button id="orderButton">Order Coffee</button>
+
+  
+    <div class="message"></div>
+
+    <script>
+
+        //1
+        function brewCoffee(coffeeType) {
+            return new Promise((resolve) => {
+                const randomDelay = Math.floor(Math.random() * 4000) + 1000; 
+                setTimeout(() => {
+                    resolve(`✅ Your ${coffeeType} is ready! Enjoy!`);
+                }, randomDelay);
+            });
+        }
+
+        //2
+        async function makeCoffee() {
+            const coffeeType = document.getElementById("coffeeSelect").value;
+            const message = document.querySelector(".message");
+
+            if (!coffeeType) {
+                message.innerHTML = "❗ Please select a coffee type first.";
+                return;
+            }
+
+            message.innerHTML = `⏳ Brewing your ${coffeeType}... Please wait!`;
+
+            const readyMessage = await brewCoffee(coffeeType);
+            message.innerHTML = readyMessage;
+        }
+
+         //3
+        document.getElementById("orderButton").addEventListener("click", () => {
+            makeCoffee();
+        });
+
+    </script>
+
+</body>
+
+</html>

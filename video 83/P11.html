@@ -1,0 +1,37 @@
+<!--11. The Array Filterer: You are building a search feature for your e-commerce site. Write a function named filterProducts that takes an array of product objects and a filter criterion. The function should return a new array containing only the products that match the filter criterion. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console Filter Fixed</title>
+</head>
+<body>
+
+  <input type="search" id="s" placeholder="Search...">
+
+  <script>
+    const data = ['red', 'blue', 'black', 'green', 'brown', 'beige', 'yellow'];
+
+    function filterProducts(array, text) {
+      if (text.trim() === '') {
+        return []; // If input is empty, return empty array
+      }
+      return array.filter(item => item.toLowerCase().includes(text.toLowerCase()));
+    }
+
+    const input = document.getElementById('s');
+
+    input.addEventListener('input', function() {      //user typing...  function running...
+
+      const searchText = input.value;
+      const filtered = filterProducts(data, searchText);
+
+      console.clear();
+      console.log(filtered);
+
+    });
+  </script>
+
+</body>
+</html>

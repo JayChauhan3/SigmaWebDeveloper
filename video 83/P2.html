@@ -1,0 +1,26 @@
+<!-- 2. The Double Trouble: You are tasked with writing a function that doubles each element in an array. However, there's a catch: if the array contains consecutive duplicate elements, only double one of them. -->
+
+<html>
+<body>
+<script>
+function doubleTrouble(arr) {
+  let result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    // If it's the same as the previous element, skip doubling
+    if (i > 0 && arr[i] === arr[i - 1]) {
+      result.push(arr[i]); // Just push the value as-is
+    } else {
+      result.push(arr[i] * 2); // Double it
+    }
+  }
+
+  return result;
+}
+
+console.log(doubleTrouble([2, 2, 3, 3, 3, 4, 5, 5]));
+// Output: [4, 2, 6, 3, 3, 8, 10, 5]
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+let b = await fs.writeFile("harry.txt","\n\n\nnew promise") 
